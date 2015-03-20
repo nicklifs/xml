@@ -1,0 +1,182 @@
+.image-preview-input {
+	display:block;
+    position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 160px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#file-api{
+	width:270px;
+}
+
+#drop-message{
+	width:70px;
+}
+
+form > span{
+	display: block; 
+	color:green; 
+	margin: 10px auto; 
+}
+
+.header{
+	background: url("../images/logo.jpg") no-repeat;
+}
+
+#xml_list{
+	background: #d9edf7;
+	border-radius: 5px;
+}
+
+
+
+.container { 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container, #content { 
+	width: 900px;
+}
+
+#drop-container {
+	margin-top: 30px;
+	height: 100px;
+}
+	
+#drop-container.over { 
+	background: #ccc; 
+	text-align: center; 
+	vertical-align: middle;
+}
+
+#drop-container.over form { 
+	display: none; 
+}
+
+#drop-container .label { 
+	display: none; 
+	font-size: 60px;
+}
+
+#drop-container.over .label { 
+	display: block;
+}
+
+#progress-container { 
+	width: 900px; 
+	height: 20px; 
+	background: #ccc; 
+	display: none; 
+}
+
+#progress-bar-container { 
+	width: 0; 
+	height: 20px; 
+	background: #2e8b57; 
+}
+
+.column { 
+	float: left; 
+}
+
+.column a { 
+	text-decoration: none; 
+}
+
+.column img, #page_loader {
+	display: none;
+}
+
+.left {
+	width: 250px;
+}
+
+.right { }
+
+li {
+	line-height: 2;
+}
+
+.left ul { 
+	list-style: none; 
+	padding-left: 0; 
+}
+
+.styless { 
+	list-style: none; 
+}
+
+.left a { 
+	text-decoration: none; 
+	color: black;
+	background-color: #ccc; 
+	padding: 2px; 
+	border-radius: 5px;
+}
+
+.left li.active a { 
+	background-color: white; 
+	border: 1px solid #ccc;
+}
+
+.left a:hover { 
+	background-color: grey;
+}
+
+.right a { 
+	border-bottom: 1px dashed; 
+	color: blue;
+}
+
+.right a:hover {
+	color: #6495ed; 
+}
+
+.right li.active a { 
+	color: black; 
+	border: none; 
+}
+
+.h-value, .h-attribute, .h-children { 
+	list-style: none;
+	padding: 2px; 
+	border-radius: 5px; 
+	border: 1px solid;
+}
+
+.h-value { 
+	background-color: #6AB54D;
+	border-color: #6AB54D; 
+	color: white; 
+}
+
+.h-attribute { 
+	background-color: #C5E2E8; 
+	border-color: #C5E2E8; 
+}
+
+.h-children {
+	background-color: #E54937; 
+	border-color: #E54937;
+	color: white;
+}
+
+.value { 
+	font-style: italic;
+}

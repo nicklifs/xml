@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Просмотр</title>
+		<link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+		<link href="css/main.css" rel="stylesheet" media="all" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>  </script>
+	</head>
+<body>
+    <div class="container" id="container">
+		<div class="header">
+			
+			<h1 align="center" style="display:block; padding-top: 10px">Загрузка XML-файла</h1>
+
+			<div id="drop-container" class="alert alert-info">
+				<div class="label">Бросай</div>
+				<form enctype="multipart/form-data" action="/upload.php" method="post">
+					<div class="btn btn-default image-preview-input">
+						<span class="glyphicon glyphicon-folder-open"></span>
+						<span class="image-preview-input-title">Выбрать файл(ы)</span>
+						<input type="file" name="file[]" id="file-container"/> 
+					</div>
+						
+					<input type="submit" name="submit" id="file-submit" value="Отправить">
+					<span id="file-api" >Файл можно перетащить из проводника</span>
+					<span id="drop-message" style="display: none;">Отпускай!</span>
+				</form>
+			</div>
+
+			
+			<div class="alert alert-danger" role="alert" style="display: none">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				<span class="sr-only">Error:</span>
+				<span id="error"></span>
+			</div>
+
+			
+			<div id="progress-container">
+				<div id="progress-bar-container"></div>
+			</div>
+		</div> 
+
+		
+		
+		
+		<div id="content">		
+		</div>
+		<hr/> 
+		<h5 align="center">&copy; 2015</h5>    
+	</div>
+</body>
+</html>
